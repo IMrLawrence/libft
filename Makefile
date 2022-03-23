@@ -1,6 +1,7 @@
 NAME	:=	libft.a
 
-SRCS	:=	ft_isalpha.c
+SRCS	:=	ft_isalpha.c \
+			ft_isdigit.c
 OBJS	:=	$(SRCS:.c=.o)
 
 CC		:=	cc
@@ -19,7 +20,7 @@ $(NAME)	:	$(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
 $(OBJS)	:	$(SRCS)
-	$(CC) -c $(CFLAGS) -o $@ $^
+	$(CC) -c $(CFLAGS) $^
 
 clean	:
 	$(RM) $(OBJS)
