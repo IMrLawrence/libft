@@ -1,6 +1,6 @@
 NAME	:=	libft.a
 
-SRCS	:=	
+SRCS	:=	ft_isalpha.c
 OBJS	:=	$(SRCS:.c=.o)
 
 CC		:=	cc
