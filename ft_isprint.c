@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wsoares- <wsoares-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/23 18:36:03 by wsoares-          #+#    #+#             */
-/*   Updated: 2022/03/23 17:53:46 by wsoares-         ###   ########.fr       */
+/*   Created: 2022/03/23 17:53:49 by wsoares-          #+#    #+#             */
+/*   Updated: 2022/03/23 17:55:49 by wsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isascii(int c);
-int	ft_isalnum(int c);
-int	ft_isprint(int c);
-
-#endif
+int	ft_isprint(int c)
+{
+	if (c >= ' ' && c <= '~')
+		return (1);
+	return (0);
+}
