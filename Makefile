@@ -7,7 +7,8 @@ SRCS	:=	ft_isalpha.c \
 			ft_isprint.c \
 			ft_toupper.c \
 			ft_tolower.c \
-			ft_bzero.c
+			ft_bzero.c	 \
+			ft_memset.c
 OBJS	:=	$(SRCS:.c=.o)
 
 CC		:=	cc
