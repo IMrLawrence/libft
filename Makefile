@@ -10,15 +10,14 @@ SRCS	:=	ft_isalpha.c \
 			ft_bzero.c	 \
 			ft_memset.c  \
 			ft_memcpy.c	 \
-			ft_memmove.c
+			ft_memmove.c \
+			ft_atoi.c
 OBJS	:=	$(SRCS:.c=.o)
 
 CC		:=	cc
 CFLAGS	?=	-Wall \
 			-Wextra \
 			-Werror
-
-LDFLAGS	?=
 
 RM		:=	rm -f
 AR		:=	ar rc
