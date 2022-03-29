@@ -6,7 +6,7 @@
 /*   By: wsoares- <wsoares-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 18:36:03 by wsoares-          #+#    #+#             */
-/*   Updated: 2022/03/28 23:54:22 by wsoares-         ###   ########.fr       */
+/*   Updated: 2022/03/28 23:57:06 by wsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
+size_t	ft_strlen(const char *s);
 
 #endif
