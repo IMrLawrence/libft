@@ -1,2 +1,5 @@
 libft.a
 *.o
+.vscode/
+a.out
+main.c
