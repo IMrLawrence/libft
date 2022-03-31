@@ -17,7 +17,8 @@ SRCS	:=	ft_isalpha.c \
 			ft_calloc.c  \
 			ft_strlen.c  \
 			ft_strlcpy.c \
-			ft_strlcat.c
+			ft_strlcat.c \
+			ft_strchr.c
 OBJS	:=	$(SRCS:.c=.o)
 
 CC		:=	cc
