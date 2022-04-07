@@ -6,14 +6,14 @@
 /*   By: wsoares- <wsoares-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 17:30:01 by wsoares-          #+#    #+#             */
-/*   Updated: 2022/04/07 09:13:10 by wsoares-         ###   ########.fr       */
+/*   Updated: 2022/04/07 09:26:34 by wsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int		ft_isset(const char c, const char *set);
-size_t	ft_strtrimsize(const char *s1, const char *set);
+static int		ft_isset(const char c, const char *set);
+static size_t	ft_strtrimsize(const char *s1, const char *set);
 
 char	*ft_strtrim(const char *s1, const char *set)
 {
@@ -39,7 +39,7 @@ char	*ft_strtrim(const char *s1, const char *set)
 	return (new_string);
 }
 
-int	ft_isset(const char c, const char *set)
+static int	ft_isset(const char c, const char *set)
 {
 	size_t	counter;
 
@@ -53,7 +53,7 @@ int	ft_isset(const char c, const char *set)
 	return (0);
 }
 
-size_t	ft_strtrimsize(const char *s1, const char *set)
+static size_t	ft_strtrimsize(const char *s1, const char *set)
 {
 	size_t	start_counter;
 	size_t	end_counter;

@@ -6,13 +6,13 @@
 /*   By: wsoares- <wsoares-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 15:33:23 by wsoares-          #+#    #+#             */
-/*   Updated: 2022/04/06 15:57:46 by wsoares-         ###   ########.fr       */
+/*   Updated: 2022/04/07 09:26:11 by wsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-size_t	ft_strlen(const char *s);
+static size_t	ft_strlen(const char *s);
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {
@@ -41,7 +41,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	return (new_string);
 }
 
-size_t	ft_strlen(const char *s)
+static size_t	ft_strlen(const char *s)
 {
 	size_t	counter;
 
