@@ -30,7 +30,8 @@ SRCS	:=	ft_isalpha.c	\
 			ft_putstr_fd.c	\
 			ft_putendl_fd.c	\
 			ft_putnbr_fd.c	\
-			ft_strmapi.c
+			ft_strmapi.c	\
+			ft_striteri.c
 OBJS	:=	$(SRCS:.c=.o)
 
 CC		:=	cc
