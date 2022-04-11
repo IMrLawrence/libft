@@ -26,7 +26,8 @@ SRCS	:=	ft_isalpha.c	\
 			ft_substr.c		\
 			ft_strjoin.c	\
 			ft_strtrim.c	\
-			ft_putchar_fd.c
+			ft_putchar_fd.c \
+			ft_putstr_fd.c
 OBJS	:=	$(SRCS:.c=.o)
 
 CC		:=	cc
