@@ -33,7 +33,8 @@ SRCS		:=	ft_isalpha.c	\
 				ft_strmapi.c	\
 				ft_striteri.c	\
 				ft_itoa.c
-SRCS_B		:=	ft_lstnew.c
+SRCS_B		:=	ft_lstnew.c			\
+				ft_lstadd_front.c
 
 OBJS		:=	$(SRCS:.c=.o)
 OBJS_B		:=	$(SRCS_B:.c=.o)
@@ -55,7 +56,7 @@ $(OBJS)		:	$(SRCS)
 	$(CC) -c $(CFLAGS) $^
 
 bonus		:	$(OBJS_B)
-	$(AR) $(NAME) (OBJS_B)
+	$(AR) $(NAME) $(OBJS_B)
 
 $(OBJS_B)	:	$(SRCS_B)
 	$(CC) -c $(CFLAGS) $^
