@@ -34,7 +34,8 @@ SRCS		:=	ft_isalpha.c	\
 				ft_striteri.c	\
 				ft_itoa.c
 SRCS_B		:=	ft_lstnew.c			\
-				ft_lstadd_front.c
+				ft_lstadd_front.c	\
+				ft_lstsize.c
 
 OBJS		:=	$(SRCS:.c=.o)
 OBJS_B		:=	$(SRCS_B:.c=.o)
@@ -62,7 +63,7 @@ $(OBJS_B)	:	$(SRCS_B)
 	$(CC) -c $(CFLAGS) $^
 
 clean		:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(OBJS_B)
 
 fclean		:	clean
 	$(RM) $(NAME)
