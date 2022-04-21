@@ -32,7 +32,8 @@ SRCS		:=	ft_isalpha.c	\
 				ft_putnbr_fd.c	\
 				ft_strmapi.c	\
 				ft_striteri.c	\
-				ft_itoa.c
+				ft_itoa.c		\
+				ft_split.c
 SRCS_B		:=	ft_lstnew.c			\
 				ft_lstadd_front.c	\
 				ft_lstsize.c		\
