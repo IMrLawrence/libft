@@ -6,13 +6,13 @@
 /*   By: wsoares- <wsoares-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 00:01:10 by wsoares-          #+#    #+#             */
-/*   Updated: 2022/03/29 00:38:36 by wsoares-         ###   ########.fr       */
+/*   Updated: 2022/04/23 17:25:49 by wsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-size_t	ft_strlen(const char *s);
+static size_t	ft_strlen(const char *s);
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -30,7 +30,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (ft_strlen(src));
 }
 
-size_t	ft_strlen(const char *s)
+static size_t	ft_strlen(const char *s)
 {
 	size_t	counter;
 

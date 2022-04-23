@@ -6,14 +6,14 @@
 /*   By: wsoares- <wsoares-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 21:35:38 by wsoares-          #+#    #+#             */
-/*   Updated: 2022/04/21 19:59:35 by wsoares-         ###   ########.fr       */
+/*   Updated: 2022/04/23 17:21:25 by wsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <stdint.h>
 
-void	ft_bzero(void *s, size_t n);
+static void	ft_bzero(void *s, size_t n);
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -27,7 +27,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	return (mem);
 }
 
-void	ft_bzero(void *s, size_t n)
+static void	ft_bzero(void *s, size_t n)
 {
 	size_t	counter;
 
