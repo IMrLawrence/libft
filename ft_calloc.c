@@ -6,20 +6,21 @@
 /*   By: wsoares- <wsoares-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 21:35:38 by wsoares-          #+#    #+#             */
-/*   Updated: 2022/04/23 17:21:25 by wsoares-         ###   ########.fr       */
+/*   Updated: 2022/04/29 17:28:18 by wsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdint.h>
 
 static void	ft_bzero(void *s, size_t n);
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*mem;
+	size_t	overflow_test;
 
-	if ((nmemb * size) == (SIZE_MAX * SIZE_MAX))
+	overflow_test = nmemb * size;
+	if (!nmemb || !size || (overflow_test / nmemb) != size)
 		return (NULL);
 	mem = malloc(nmemb * size);
 	if (mem != NULL)
