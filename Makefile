@@ -6,11 +6,12 @@
 #    By: wsoares- <wsoares-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/29 17:08:05 by wsoares-          #+#    #+#              #
-#    Updated: 2022/04/29 17:08:09 by wsoares-         ###   ########.fr        #
+#    Updated: 2022/04/29 18:05:34 by wsoares-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		:=	libft.a
+NAME_B		:=	libft_bonus.a
 
 SRCS		:=	ft_isalpha.c	\
 				ft_isdigit.c	\
@@ -72,11 +73,14 @@ all			: 	$(NAME)
 $(NAME)		:	$(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
+$(NAME_B)	: $(NAME) $(OBJS_B)
+	$(AR) $(NAME) $(OBJS_B)
+	cp $(NAME) $(NAME_B)
+ 
 $(OBJS)		:	$(SRCS)
 	$(CC) -c $(CFLAGS) $^
 
-bonus		:	$(OBJS_B)
-	$(AR) $(NAME) $(OBJS_B)
+bonus		:	$(NAME_B)
 
 $(OBJS_B)	:	$(SRCS_B)
 	$(CC) -c $(CFLAGS) $^
@@ -85,7 +89,7 @@ clean		:
 	$(RM) $(OBJS) $(OBJS_B)
 
 fclean		:	clean
-	$(RM) $(NAME)
+	$(RM) $(NAME) $(NAME_B)
 
 re			:	fclean all
 
